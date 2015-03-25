@@ -65,7 +65,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <rect key="frame" x="16" y="266" width="344" height="30"/>
                                 </variation>
                             </textField>
@@ -91,7 +90,7 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SRT-7y-JWn"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtH-dy-1D8">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtH-dy-1D8">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -106,6 +105,15 @@
                                     <rect key="frame" x="260" y="143" width="100" height="100"/>
                                 </variation>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-hU-rGB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="152" width="236" height="35"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -115,6 +123,7 @@
                                 <exclude reference="aG5-DP-vYQ"/>
                                 <exclude reference="ZtH-dy-1D8"/>
                                 <exclude reference="kt6-Q0-fQC"/>
+                                <exclude reference="Stg-hU-rGB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -124,6 +133,7 @@
                                 <include reference="aG5-DP-vYQ"/>
                                 <include reference="ZtH-dy-1D8"/>
                                 <include reference="kt6-Q0-fQC"/>
+                                <include reference="Stg-hU-rGB"/>
                             </mask>
                         </variation>
                     </view>
@@ -132,6 +142,7 @@
                         <outlet property="enterNameTextField" destination="hQv-gm-S0r" id="MtZ-ye-54t"/>
                         <outlet property="mailButton" destination="aG5-DP-vYQ" id="ETZ-Wp-k1S"/>
                         <outlet property="messageLabel" destination="ZtH-dy-1D8" id="fVB-QG-fY1"/>
+                        <outlet property="nameLabel" destination="Stg-hU-rGB" id="TPM-BP-O0P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
